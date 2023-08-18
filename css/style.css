@@ -1,15 +1,14 @@
 @font-face {
   font-family: Santio;
-  src: url(../assets/fonts/Santio\ regular.ttf) format(bold),
-    url(../assets/fonts/Santio\ Bold.ttf) format(boldline),
-    url(../assets/fonts/Santio\ Boldline.ttf) format(inline),
-    url(../assets/fonts/Santio\ Inline.ttf) format(light),
-    url(../assets/fonts/Santio\ light.ttf) format(santioblack),
-    url(../assets/fonts/Santio\ Black.ttf);
+  src: url(/assets/fonts/Santio\ regular.ttf);
 }
 @font-face {
   font-family: inter;
   src: url(../assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+@font-face {
+  font-family: MrDafoe;
+  src: url(../assets/fonts/MrDafoe-Regular.ttf);
 }
 * {
   margin: 0;
@@ -19,52 +18,73 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Santio", Arial, Helvetica, sans-serif;
+  font-family: Santio, inter, MrDafoe;
 }
 .parallax {
-  background-image: url(../assets/img/cleo-topper.jpg);
-  position: relative;
-  background-position: center;
+  background: url("../assets/img/cleo-topper.jpg") no-repeat;
+  height: 100vw;
+  width: auto;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
 }
-img {
-  width: 100vw;
+.content {
+  position: relative;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 .logo {
-  height: 30px;
-  width: 30px;
+  height: 4vh;
+  width: auto;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 1.8rem;
-  padding-top: 10px;
+  font-size: 9rem;
   gap: 30px;
-  margin-bottom: 30vh;
+  margin-bottom: 15vh;
 }
 header a {
   text-decoration: none;
   color: #ffffff;
   border-bottom: #e7bc0e solid;
-  padding-bottom: 4px;
 }
 .statimg {
-  height: 110px;
-  width: 110px;
+  height: 10vh;
+  width: auto;
 }
 .section1 {
   display: flex;
   flex-direction: column;
-  font-family: inter;
-  font-size: 5rem;
+  font-family: Santio;
+  font-size: 20rem;
   font-weight: bold;
   color: #ffffff;
-  width: 20vw;
+  width: 15vw;
+}
+.section1 h2 {
+  padding-bottom: 10vh;
+}
+.section1 p {
+  display: flex;
+  font-size: 15rem;
+  width: 50vw;
+  font-family: MrDafoe;
+  color: #e7bc0e;
+}
+.section1 span {
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  font-family: Santio;
+  font-size: 10rem;
+  font-style: italic;
+}
+.section2 {
+  display: flex;
+  color: #6bc1a3;
+  font-family: Santio;
+  font-size: 20rem;
+  width: 40vw;
 }

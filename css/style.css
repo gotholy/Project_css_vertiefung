@@ -7,6 +7,10 @@
     url(../assets/fonts/Santio\ light.ttf) format(santioblack),
     url(../assets/fonts/Santio\ Black.ttf);
 }
+@font-face {
+  font-family: inter;
+  src: url(../assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
 * {
   margin: 0;
   padding-left: 0;
@@ -33,8 +37,8 @@ img {
   width: 100vw;
 }
 .logo {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 header {
   display: flex;
@@ -43,6 +47,7 @@ header {
   font-size: 1.8rem;
   padding-top: 10px;
   gap: 30px;
+  margin-bottom: 30vh;
 }
 header a {
   text-decoration: none;
@@ -53,4 +58,13 @@ header a {
 .statimg {
   height: 110px;
   width: 110px;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  font-family: inter;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff;
+  width: 20vw;
 }
